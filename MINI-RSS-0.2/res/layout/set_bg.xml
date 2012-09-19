@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/set_bg_rl">
+  <ImageSwitcher 
+  		android:id="@+id/set_bg_is"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+  </ImageSwitcher>
+  <LinearLayout 
+  		android:id="@+id/set_bg_ll_menu" 
+  		style="@style/menu_linner"
+  		android:layout_width="fill_parent" 
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_alignParentBottom="true"
+  		android:gravity="center">
+  		<ImageButton 
+	      	android:layout_height="wrap_content" 
+	      	android:layout_width="wrap_content" 
+	      	android:src="@drawable/btn_back" 
+	      	android:id="@+id/set_bg_ib_back"
+	      	android:background="@drawable/ib_bg"/>
+		<Gallery 
+			android:id="@+id/set_bg_gl" 
+			android:spacing="16dp" 
+			android:background="#55000000" 
+			android:gravity="center_vertical" 
+			android:layout_width="fill_parent"
+			android:layout_height="50dip"
+			android:layout_weight="10"/>
+      <ImageButton 
+	      	android:layout_height="wrap_content" 
+	      	android:layout_width="wrap_content" 
+	      	android:src="@drawable/btn_ok" 
+	      	android:id="@+id/set_bg_ib_ok"
+	      	android:background="@drawable/ib_bg"/>
+  </LinearLayout>
+</RelativeLayout>

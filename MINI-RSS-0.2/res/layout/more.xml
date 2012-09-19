@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/main_theme"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/more_ll">
+    <WebView android:id="@+id/more_wv_info" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:layout_weight="10"/>
+    <LinearLayout
+			android:id="@+id/scan_ll_bottom"
+			style="@style/menu_linner">
+			<ImageButton
+				android:id="@+id/more_btn_back"
+				style="@style/scan_btn"
+				android:src="@drawable/btn_back">
+			</ImageButton>
+		</LinearLayout>
+</LinearLayout>

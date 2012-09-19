@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="main_theme">
+		<item name="android:background">@drawable/main_bg4</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	</style>
+	<style name="menu_linner">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">50px</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:background">@drawable/bottom_menu_bg</item>
+	</style>
+	<style name="main_btn">
+		<item name="android:background">@drawable/ib_bg</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<style name="scan_btn">
+		<item name="android:background">@drawable/ib_bg</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<style name="scan_sd_btn">
+		<item name="android:background">#00000000</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="main_dialog_tv">
+		<item name="android:textSize">16sp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingLeft">10px</item>
+		<item name="android:paddingRight">10px</item>
+	</style>
+	<style name="main_dialog_ll">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="main_dialog_ib">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+    <style name="Dialog_Fullscreen">  
+    	<item name="android:windowFullscreen">true</item>  
+    	<item name="android:windowNoTitle">true</item>  
+	</style>
+	
+</resources>

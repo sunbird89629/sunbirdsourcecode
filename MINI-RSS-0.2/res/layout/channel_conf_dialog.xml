@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		style="@style/main_dialog_ll">
+		<TextView
+			android:text="@string/main_dialog_update_period"
+			android:id="@+id/TextView01"
+			style="@style/main_dialog_tv" />
+		<TextView
+			android:text="@+id/main_dialog_tv_ttl"
+			android:id="@+id/main_dialog_tv_ttl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/LinearLayout02"
+		style="@style/main_dialog_ll">
+		<TextView
+			android:text="@string/main_dialog_storage_num"
+			android:id="@+id/TextView03"
+			style="@style/main_dialog_tv" />
+		<EditText
+			android:text="@+id/EditText01"
+			android:id="@+id/main_dialog_et_storage_num"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/LinearLayout04"
+		style="@style/main_dialog_ll">
+		<ImageButton
+			android:id="@+id/main_dialog_ib_flush"
+			style="@style/main_dialog_ib"
+			android:background="@drawable/btn_flush"
+			android:layout_weight="1"/>
+		<ImageButton
+			android:id="@+id/main_dialog_ib_dele_items"
+			style="@style/main_dialog_ib"
+			android:background="@drawable/btn_clear_item"
+			android:layout_weight="1" />
+		<ImageButton
+			android:id="@+id/main_dialog_ib_dele_channel"
+			style="@style/main_dialog_ib"
+			android:background="@drawable/btn_delete"
+			android:layout_weight="1" />
+	</LinearLayout>
+</LinearLayout>

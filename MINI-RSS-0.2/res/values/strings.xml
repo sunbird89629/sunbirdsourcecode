@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MianActivity!</string>
+    <string name="app_name">迷你RSS</string>
+    <string name="main_dialog_title">频道信息设置</string>
+    <string name="main_dialog_update_period">频道更新周期</string>
+    <string name="main_dialog_storage_num">最大存储条数</string>
+    <string name="main_dialog_auto_update">是否自动更新</string>
+    
+    <string name="book_news">RSSFeed</string>
+    <string name="book_qqzone">QQ空间</string>
+    <string name="book_reco">推荐RSSFeed</string>
+</resources>

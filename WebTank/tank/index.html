@@ -1,0 +1,131 @@
+<!doctype html>
+<!--
+ @author: zero qiu
+ @tel: 13771753627
+ @email: zero_qiu@163.com
+-->
+<html>
+	<head>
+		<title>坦克游戏</title>
+		<link href="images/tank.ico" rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="css/tank.css">
+		<script type="text/javascript" src="js/util.js"></script>
+		<script type="text/javascript" src="js/tank.config.js"></script>
+		<script type="text/javascript" src="js/tank.namespace.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/tank.progress.js"></script>
+		<script type="text/javascript" src="js/tank.main.js"></script>
+		<script type="text/javascript" src="js/tank.factory.js"></script>
+		<script type="text/javascript" src="js/tankwar.js"></script>
+		<script>
+			$(function() {
+				TankWarMng.init();
+			});
+		</script>
+	</head>
+	<body style="overflow:hidden">
+		<!-- welcome scene -->
+		<div id="progress" style="display: none;">
+			<div id="welcome">
+				Tank War 2011
+			</div>
+			<div id="bar">
+				<div id="percent" style="display: none;">
+					<span>0</span>%
+				</div>
+				<img src="images/progress.gif">
+				<div id="loading" style="display: none;">
+					正在下载
+					<span></span>
+				</div>
+			</div>
+			<div id="qq">
+				QQ群：38155026
+			</div>
+		</div>
+		<!-- home menu -->
+		<div id="home" style="display: none;">
+			<div id="star" class="1"></div>
+			<div id="star2" class="2"></div>
+			<div id="help"></div>
+			<div id="exit"></div>
+			<div id="option"></div>
+		</div>
+		<!-- help content -->
+		<div id="helpCont" style="display: none;">
+			<div class="back"></div>
+		</div>
+		<!-- game parameters -->
+		<div id="optionWin" style="display: none;">
+			<div id="sound">
+				<div class="mButton" id="mButton"></div>
+				<div class="meButton"></div>
+			</div>
+			<div id="scene">
+				<div class="lawn"></div>
+				<div class="snowfield"></div>
+				<div class="sandlot"></div>
+				<div class="random"></div>
+			</div>
+			<div class="confirm"></div>
+			<div class="cancel"></div>
+		</div>
+		<!-- level window -->
+		<div id="levelWin" style="display: none;">
+			<div class="level_1" style="display: none;"><div class="iss"><span class="levelnum">第1关</span></div></div>
+			<div class="level_2" style="display: none;"><div class="iss"><span class="levelnum">第2关</span></div></div>
+			<div class="level_3" style="display: none;"><div class="iss"><span class="levelnum">第3关</span></div></div>
+		</div>
+		<!-- here starts tank game! -->
+		<div id="startGame" style="display: none;">
+			<div id="container"></div>
+			<!-- nums and exit button -->
+			<div id="related" style="display: none;">
+				<div id="nums">
+					<div id="tc_enemyR"></div>
+					<div id="tc_enemyB"></div>
+					<div id="tc_enemyY"></div>
+					<div id="tc_enemyG"></div>
+				</div>
+				<div id="score">
+					<div id="tc_p1"></div>
+					<div id="score_p1"></div>
+					<div id="tc_p2"></div>
+					<div id="score_p2"></div>
+				</div>
+				<div id="round"></div>
+				<div id="level">
+					<div id="ln">
+					</div>
+				</div>
+				<!-- info menu on click or 'esc' -->
+				<div id="gameMenu">
+					<div id="goHome"></div>
+					<div id="info" style="display: none;">
+						<div id="goMenu"><div class="select"></div></div>
+						<div id="continue"><div class="select"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- game over~ -->
+		<div id="gameover" style="display: none;">
+			<div id="wOrl"></div>
+			<div id="p1Score">
+				<div id="p1r"></div>
+				<div id="p1b"></div>
+				<div id="p1y"></div>
+				<div id="p1g"></div>
+			</div>
+			<div id="p2Score">
+				<div id="p2r"></div>
+				<div id="p2b"></div>
+				<div id="p2y"></div>
+				<div id="p2g"></div>
+			</div>
+			<div id="p1Ttl"></div>
+			<div id="p2Ttl"></div>
+			<div id="anyKey"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,357 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: black;
+}
+#progress, #home, #container, #helpCont, #levelWin, #gameover {
+	margin: 5px 0 0 5px;
+	width: 800px; 
+	height: 600px;
+	overflow: hidden;
+	border: 3px solid #292929;
+}
+#progress {
+	background: white;
+	font-family: Comic Sans MS, Times New Roman;
+}
+#bar {
+	text-align: center;
+	width: 200px;
+	height: 180px;
+	left: 610px;
+	font-size: 11px;
+}
+#percent {
+	top: 20px;
+	left: 15px;
+}
+#loading {
+	top: -10px;
+	left: 15px;
+}
+#qq {
+	text-align: right;
+	margin-top: 250px;
+	padding: 10px 80px;
+	font-weight: bold;
+}
+#home {
+	background: url(../images/modewin/about.bmp) no-repeat;
+}
+#welcome {
+	font-size: 100px;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 100px;
+}
+#helpCont {
+	background: url(../images/modewin/help0.bmp) no-repeat;
+}
+#levelWin {
+	background: url(../images/levelWin/bgrnd.bmp) no-repeat;
+}
+#gameover {
+	background: url(../images/gameover.bmp) no-repeat;
+}
+#percent, #loading, #ln, #goMenu, #continue, #info .selected, .levelnum {
+	position: relative;
+}
+#bar, #star, #star2, #help, #exit, #option, #optionWin, .king, .tank, .bullet, .block, .back, .mButton, .meButton, .lawn, .snowfield, .sandlot, .random, .confirm, .cancel, .level_1, .level_2, .level_3, #tc_enemyR, #tc_enemyB, #tc_enemyY, #tc_enemyG, #goHome, #info, #level, #right, .born, #score_p1, #score_p2, #tc_p1, #tc_p2, #round, #wOrl, #p1r, #p1g, #p1y, #p1b, #p2r, #p2g, #p2y, #p2b, #p1Ttl, #p2Ttl, #anyKey {
+	position: absolute;
+}
+.tank, .bullet {
+	width: 36px;
+	height: 36px;
+	z-index: 2;
+}
+.block {
+	width: 36px;
+	height: 36px;
+}
+#star {
+	background: url(../images/modewin/star.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 101px;
+	top: 425px;
+	left: 670px;
+}
+#star2 {
+	background: url(../images/modewin/star2.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 109px;
+	top: 457px;
+	left: 553px;
+}
+#help {
+	background: url(../images/modewin/help.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 149px;
+	top: 501px;
+	left: 521px;
+}
+#exit {
+	background: url(../images/modewin/exit.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 149px;
+	top: 540px;
+	left: 640px;
+}
+#option {
+	background: url(../images/modewin/option.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 149px;
+	top: 548px;
+	left: 458px;
+}
+#optionWin {
+	background: url(../images/optionwin/bgrnd.bmp) no-repeat;
+	height: 0;
+	width: 0;
+	top: 588px;
+	left: 800px;
+	z-index: 100px;
+}
+.back {
+	background: url(../images/modewin/help-back.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 128px;
+	top: 549px;
+	left: 639px;
+}
+.mButton, .meButton {
+	background: url(../images/optionwin/key.bmp) no-repeat;
+	height: 23px;
+	left: 84px;
+}
+.mButton {
+	width: 205px;
+	top: 82px;
+}
+.meButton {
+	width: 10px;
+	top: 121px;
+}
+.lawn, .snowfield, .sandlot, .random {
+	height: 23px;
+	width: 24px;
+}
+.lawn {
+	top: 254px;
+	left: 124px;
+}
+.snowfield {
+	top: 254px;
+	left: 267px;
+}
+.sandlot {
+	top: 315px;
+	left: 124px
+}
+.random {
+	top: 315px;
+	left: 268px
+}
+.checked {
+	background: url(../images/optionwin/checkbox2.png) no-repeat;
+}
+.confirm {
+	background: url(../images/optionwin/confirm.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 156px;
+	top: 358px;
+	left: 2px;
+}
+.cancel {
+	background: url(../images/optionwin/exit.bmp) 0% 50% no-repeat;
+	height: 43px;
+	width: 157px;
+	top: 358px;
+	left: 160px;
+}
+.level_1, .level_2, .level_3 {
+	background: url(../images/levelWin/btn.png) 0% 50% no-repeat;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+	color: white;
+	height: 38px;
+	width: 129px;
+}
+.level_1 {
+	top: 195px;
+	left: 70px;
+}
+.level_2 {
+	top: 195px;
+	left: 204px;
+}
+.level_3 {
+	top: 196px;
+	left: 339px;
+}
+.iss {
+	height: 39px;
+}
+#levelWin .selected {
+	background: url(../images/levelWin/choose.png);
+	color: red;
+	height: 40px;
+	width: 130px;
+}
+.levelnum {
+	top: 10px;
+}
+#level {
+	background: url(../images/level.png) no-repeat;
+	height: 160px;
+	width: 320px;
+	top: 200px;
+	left: 190px;
+	z-index: 10;
+}
+#ln {
+	height: 66px;
+	width: 50px;
+	top: 80px;
+	left: 135px;
+	z-index: 11;
+	
+}
+#goHome {
+	background: url(../images/exit.png) 0% 50% no-repeat;
+	height: 98px;
+	width: 96px;
+	top: 510px;
+	left: 701px;
+}
+#info {
+	background: url(../images/info/bgrnd.bmp) no-repeat;
+	height: 161px;
+	width: 194px;
+	top: 200px;
+	left: 260px;
+	z-index: 12;
+}
+#goMenu, #continue {
+	height: 30px;
+	width: 133px;
+	left: 51px;
+	z-index: 13;
+}
+#goMenu {
+	background: url(../images/info/gomenu.bmp) no-repeat;
+	top: 55px;
+}
+#continue {
+	background: url(../images/info/continue.bmp) no-repeat;
+	top: 71px;
+}
+#info .selected {
+	background: url(../images/info/Arrow.png);
+	height: 33px;
+	width: 43px;
+	top: -1px;
+	left: -42px;
+}
+.born {
+	height: 50px;
+	width: 34px;
+	z-index: 1;
+}
+#tc_enemyR, #tc_enemyB, #tc_enemyY, #tc_enemyG {
+	left: 750px;
+}
+#tc_enemyR {
+	top: 109px;
+}
+#tc_enemyB {
+	top: 162px;
+}
+#tc_enemyY {
+	top: 215px;
+}
+#tc_enemyG {
+	top: 268px;
+}
+#tc_p1 {
+	top: 565px;
+	left: 123px;
+}
+#tc_p2 {
+	top: 565px;
+	left: 356px;
+}
+#score_p1 {
+	top: 569px;
+	left: 180px;
+}
+#score_p2 {
+	top: 569px;
+	left: 413px;
+}
+#round {
+	top: 458px;
+	left: 731px;
+}
+.king {
+	height: 50px;
+	width: 36px;
+	z-index: 1;
+}
+#wOrl {
+	height: 30px;
+	width: 117px;
+	top: 205px;
+	left: 360px;
+}
+#p1r {
+	top: 295px;
+	left: 274px;
+}
+#p1b {
+	top: 337px;
+	left: 274px;
+}
+#p1y {
+	top: 379px;
+	left: 274px;
+}
+#p1g {
+	top: 424px;
+	left: 274px;
+}
+#p2r {
+	top: 295px;
+	left: 484px;
+}
+#p2b {
+	top: 337px;
+	left: 484px;
+}
+#p2y {
+	top: 379px;
+	left: 484px;
+}
+#p2g {
+	top: 424px;
+	left: 484px;
+}
+#p1Ttl {
+	top: 486px;
+	left: 289px;
+}
+#p2Ttl {
+	top: 486px;
+	left: 506px;
+}
+#anyKey {
+	height: 22px;
+	width: 132px;
+	top: 562px;
+	left: 360px;
+}
+.presscontinue {
+	background: url(../images/presscontinue.png) no-repeat;
+}

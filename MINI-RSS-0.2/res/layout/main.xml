@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/main_theme"
+	android:id="@+id/main_ll"
+	android:orientation="vertical">
+	<ListView
+		android:id="@+id/main_lv_channels"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#00000000"
+		android:divider="#00000000"
+		android:cacheColorHint="#00000000"
+		android:layout_weight="39">
+	</ListView>
+	<LinearLayout
+		android:id="@+id/main_ll_menu"
+		style="@style/menu_linner"
+		android:layout_height="50dip">
+		<ImageButton
+			android:id="@+id/main_ibn_config"
+			style="@style/main_btn"
+			android:src="@drawable/btn_config">
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/main_ibn_book"
+			style="@style/main_btn"
+			android:src="@drawable/btn_book_center">
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/main_ibn_search"
+			style="@style/main_btn"
+			android:src="@drawable/btn_search">
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/main_ibn_collection"
+			style="@style/main_btn"
+			android:src="@drawable/btn_personal">
+		</ImageButton>
+		<ImageButton
+			android:id="@+id/main_ibn_exit"
+			style="@style/main_btn"
+			android:src="@drawable/btn_exit">
+		</ImageButton>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cecece"
+    >
+    <LinearLayout 
+			android:gravity="top" android:orientation="vertical" android:id="@+id/each_layout"
+			android:layout_height="fill_parent" android:layout_width="fill_parent">
+	</LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    	android:layout_gravity="bottom|right"
+    	>
+   		<com.turlet.fanshaped.view.FanShapedHideView android:layout_width="65dip"
+			android:layout_height="65dip" android:layout_gravity="bottom|right" 
+			android:id="@+id/fanshapedhide">
+   		
+   		</com.turlet.fanshaped.view.FanShapedHideView>
+		<com.turlet.fanshaped.view.FanShapedView android:layout_width="280dip"
+			android:layout_height="280dip" 
+			android:id="@+id/fanshaped">
+		</com.turlet.fanshaped.view.FanShapedView>
+   	</FrameLayout>
+    	
+</FrameLayout>
+ 		
